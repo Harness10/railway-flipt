@@ -3,3 +3,19 @@ storage:
         backend:
             type: local
             path: /var/opt/flipt
+authentication:
+    required: true
+    exclude:
+        evaluation: true
+    session:
+        domain: ${env:RAILWAY_PUBLIC_DOMAIN}
+    methods:
+        github:
+            enabled: true
+            scopes:
+                - read:org
+            allowed_organizations:
+                - Harness10
+            client_id: ${env:GITHUB_CLIENT_ID}
+            client_secret: ${env:GITHUB_CLIENT_SECRET}
+            redirect_address: https://${env:RAILWAY_PUBLIC_DOMAIN}
