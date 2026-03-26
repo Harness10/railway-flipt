@@ -9,7 +9,7 @@ COPY --chmod=755 entrypoint.sh /entrypoint.sh
 
 USER flipt
 
-RUN mkdir -p $HOME/.config/flipt
-COPY config.yml $HOME/.config/flipt/config.yml
+RUN mkdir -p /home/flipt/.config/flipt
+COPY config.yml /home/flipt/.config/flipt/config.yml
 
 ENTRYPOINT ["/entrypoint.sh"]
