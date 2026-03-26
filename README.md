@@ -2,7 +2,7 @@
 
 An extended Flipt Dockerfile for running Flipt v2 in Railway local-first (Git-native) on a persistent volume.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/Okc6ST?referralCode=_lCpBL&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/flipt-local?referralCode=_lCpBL&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## What this is
 
