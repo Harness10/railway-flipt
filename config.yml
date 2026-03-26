@@ -9,6 +9,9 @@ authentication:
         evaluation: true
     session:
         domain: ${env:RAILWAY_PUBLIC_DOMAIN}
+        secure: true
+        csrf:
+            key: ${env.CSRF_KEY}
     methods:
         github:
             enabled: true
