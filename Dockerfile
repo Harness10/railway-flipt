@@ -1,4 +1,4 @@
-FROM docker.flipt.io/flipt/flipt:v2
+FROM ghcr.io/flipt-io/flipt:v2
 
 USER root
 
